@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/white"
+              android:gravity="top"
+              android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to 24 Hours of Fame!"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="10dp"
+            />
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="285dp"
+            android:layout_height="243dp"
+            android:layout_gravity="center"
+            android:src="@drawable/splash_logo"
+            android:paddingBottom="10dp"/>
+
+    <Button
+            android:onClick="signupOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up now!"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/signupButton" />
+
+    <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2.4"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:visibility="gone" />
+
+
+</LinearLayout>

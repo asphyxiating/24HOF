@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4a4a" >
+
+    <!-- Home Header -->
+
+    <LinearLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:background="@layout/bg_player_header"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <!-- Current Date -->
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Upload Your Moment of Fame"
+            android:textColor="#04b3d2"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <!-- Image Footer -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_header_bg"
+        android:layout_marginBottom="5dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/CameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.13"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/TextPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Picture"
+            android:textColor="#04b3d2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/PicPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+    <!-- Video Footer -->
+
+    <LinearLayout
+        android:id="@+id/VideoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_header_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/VideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.13"
+            android:src="@drawable/video" />
+
+        <TextView
+            android:id="@+id/VideoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Video"
+            android:textColor="#04b3d2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/VideoPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+    <!-- Text Footer -->
+
+    <LinearLayout
+        android:id="@+id/TextLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/VideoLayout"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.13"
+            android:src="@drawable/text" />
+
+        <TextView
+            android:id="@+id/TextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Text"
+            android:textColor="#04b3d2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/TextPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+    <!-- Audio Footer -->
+
+    <LinearLayout
+        android:id="@+id/AudioLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextLayout"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/AudioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.13"
+            android:src="@drawable/headphones" />
+
+        <TextView
+            android:id="@+id/TextAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Song"
+            android:textColor="#04b3d2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/AudioPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+</RelativeLayout>

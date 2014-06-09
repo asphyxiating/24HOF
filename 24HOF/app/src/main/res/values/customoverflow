@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Custom.Theme" parent="@android:style/Theme.Holo">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/add</item>
+    </style>
+
+
+</resources>

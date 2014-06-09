@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+            android:id="@+id/uploadpic"
+            android:title="Upload Picture"
+            android:icon="@drawable/camera"
+            android:showAsAction="never"
+            />
+
+    <item
+            android:id="@+id/uploadvideo"
+            android:title="Upload Video"
+            android:icon="@drawable/video"
+            android:showAsAction="never"
+            />
+
+    <item
+            android:id="@+id/uploadtext"
+            android:title="Upload Text"
+            android:icon="@drawable/text"
+            android:showAsAction="never"
+            />
+
+    <item
+            android:id="@+id/uploadsong"
+            android:title="Upload Song"
+            android:icon="@drawable/headphones"
+            android:showAsAction="never"
+            />
+
+
+</menu>

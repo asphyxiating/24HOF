@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:id="@+id/nameEditText"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:id="@+id/emailEditText"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="age"
+                android:id="@+id/ageEditText"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="saveOnClick"
+                android:text="Save"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/pictureIv"
+            android:src="@drawable/profile_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:onClick="pictureOnClick"
+            android:scaleType="centerCrop"/>
+
+
+</LinearLayout>

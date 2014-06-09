@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4a4a" >
+
+    <!-- Home Header -->
+
+    <LinearLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:background="@layout/bg_player_header"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <!-- Current Date -->
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="12 April, 2014"
+            android:gravity="center"
+            android:textColor="#04b3d2"
+            android:textSize="40sp"
+            />
+    </LinearLayout>
+
+    <!-- Image Footer -->
+
+    <LinearLayout
+        android:id="@+id/ImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_header_bg"
+        android:layout_marginBottom="20dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+             >
+
+            <ImageButton
+                android:id="@+id/ImageWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/default_image_mdpi" />
+
+            <ImageButton
+                android:id="@+id/btnProfile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/profile_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Video Footer -->
+
+    <LinearLayout
+        android:id="@+id/VideoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/player_header_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.42"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <VideoView
+                android:id="@+id/ImageButton02"
+                android:layout_width="138dp"
+                android:layout_height="86dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:layout_marginLeft="30dp"
+                android:src="@raw/barcelona" />
+
+            <ImageButton
+                android:id="@+id/btnProfile2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/profile_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Text Footer -->
+
+    <LinearLayout
+        android:id="@+id/TextLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/VideoLayout"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/ImageButton04"
+                android:layout_width="138dp"
+                android:layout_height="86dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:layout_marginLeft="30dp"
+                android:text="The real important kind of freedom involves attention, and awareness, and discipline, and being able to truly care about"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/btnProfile3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/profile_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Audio Footer -->
+
+    <LinearLayout
+        android:id="@+id/AudioLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextLayout"
+        android:layout_marginTop="10dp"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:src="@drawable/img_btn_play_mdpi" />
+
+            <ImageButton
+                android:id="@+id/btnPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:src="@drawable/img_btn_pause_mdpi" />
+
+            <ImageButton
+                android:id="@+id/btnProfile4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/profile_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
