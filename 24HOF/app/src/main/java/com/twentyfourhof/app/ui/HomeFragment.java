@@ -18,7 +18,6 @@ import java.util.Calendar;
 public class HomeFragment extends Fragment {
 
     private TextView tv;
-    private MediaPlayer audiofile;
     private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, MMMM dd");
 
     @Override
@@ -41,10 +40,10 @@ public class HomeFragment extends Fragment {
         tv.setText(snapshotTime);
 
         // Loading Font Face
-      //  Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), fontPath);
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), fontPath);
 
         // Applying font
-     //   tv.setTypeface(tf);
+        tv.setTypeface(tf);
 
         // audiofile = (MediaPlayer) audiofile.create(this, R.raw.test_song);
         return rootView;
