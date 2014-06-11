@@ -8,5 +8,6 @@
     <string name="banner">24 Hours of Fame</string>
     <string name="_24_hours_of_fame">conDes</string>
     <string name="con_des">24 Hours of Fame</string>
+    <string name="title_activity_custom_on_item_selected_listener">CustomOnItemSelectedListener</string>
 
 </resources>
