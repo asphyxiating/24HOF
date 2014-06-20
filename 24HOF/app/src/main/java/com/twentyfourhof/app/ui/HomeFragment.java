@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.twentyfourhof.app.R;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 

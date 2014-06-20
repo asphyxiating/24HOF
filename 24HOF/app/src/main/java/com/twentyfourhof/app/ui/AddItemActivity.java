@@ -60,7 +60,7 @@ public class AddItemActivity extends RoboActivity {
         // Font path
         String fontPath = "fonts/max_handwriting.ttf";
 
-        // Loading Font Face
+        // Loading font face
         Typeface tf = Typeface.createFromAsset(this.getAssets(), fontPath);
 
         // Applying font
@@ -70,10 +70,10 @@ public class AddItemActivity extends RoboActivity {
         step4Tv.setTypeface(tf);
         nameTv.setTypeface(tf);
 
-        // Spinner Drop down elements
+        // Spinner drop-down elements
         List<String> categories = new ArrayList<String>();
-        categories.add("Poetry");
         categories.add("Short Story");
+        categories.add("Poetry");
         categories.add("Lyrics");
         categories.add("Comedy");
         categories.add("Miscellaneous");
@@ -84,7 +84,7 @@ public class AddItemActivity extends RoboActivity {
         categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(categoryAdapter);
 
-        // add spinner item selection listener
+        // Custom spinner item selection listener
         addListenerOnSpinnerItemSelection();
 
     }
@@ -95,9 +95,6 @@ public class AddItemActivity extends RoboActivity {
 
         spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
-
-    //get the selected dropdown list value
-
 
     public void saveOnClick(View view) {
         MediaItem item = new MediaItem ();
