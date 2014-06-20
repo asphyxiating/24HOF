@@ -6,6 +6,7 @@ public class MediaItem {
 
     private String name = "";
     private String text = "";
+    private String category = "";
     private boolean favorised;
     private User user = new User();
     private long timeStamp = 0;
@@ -27,6 +28,10 @@ public class MediaItem {
     public void setText(String text) {
         this.text = text;
     }
+
+    public String getCategory(){ return category; }
+
+    public void setCategory(String category) { this.category = category; }
 
     public boolean isFavorised() {return favorised;}
 

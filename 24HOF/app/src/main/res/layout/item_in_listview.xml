@@ -35,6 +35,18 @@
         android:textSize="15dip"
         android:textStyle="bold"/>
 
+
+    <!-- Favorize Heart -->
+
+    <CheckBox
+            android:id="@+id/favorizebutton"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:background="@drawable/item_in_listview_button"/>
+
 	<!-- Text -->
     <TextView
         android:id="@+id/text"
@@ -43,20 +55,13 @@
         android:layout_below="@id/title"
         android:textColor="#343434"
         android:textSize="10dip"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_toLeftOf="@id/favorizebutton"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnail"
         android:text="Just gonna start here and end it there..." />
-      
-     <!-- Favorize Heart -->
 
-     <CheckBox
-        android:id="@+id/favorizebutton"
-        android:layout_width="25dip"
-        android:layout_height="25dip"
-     	android:layout_alignParentRight="true"
-     	android:layout_centerVertical="true"
-        android:focusable="false"
-        android:background="@drawable/item_in_listview_button"/>
 
     <TextView
             android:id="@+id/categoryTextView"

@@ -1,5 +1,6 @@
 package com.twentyfourhof.app.ui.events;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -9,10 +10,7 @@ public class CustomOnItemSelectedListener implements OnItemSelectedListener {
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos,
                                long id) {
-
-        Toast.makeText(parent.getContext(),
-                "You picked : \n" + parent.getItemAtPosition(pos).toString(),
-                Toast.LENGTH_LONG).show();
+        Log.d(CustomOnItemSelectedListener.class.getSimpleName(), "User selected" + parent.getItemAtPosition(pos).toString());
     }
 
     @Override

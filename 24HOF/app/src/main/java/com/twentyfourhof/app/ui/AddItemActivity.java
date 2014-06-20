@@ -76,7 +76,7 @@ public class AddItemActivity extends RoboActivity {
         categories.add("Poetry");
         categories.add("Lyrics");
         categories.add("Comedy");
-        categories.add("Miscellaneous");
+        categories.add("Misc");
 
         ArrayAdapter<String> categoryAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, categories);
@@ -92,7 +92,6 @@ public class AddItemActivity extends RoboActivity {
     // Add spinner data
 
     public void addListenerOnSpinnerItemSelection(){
-
         spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
 
@@ -101,6 +100,7 @@ public class AddItemActivity extends RoboActivity {
         item.setUser(user);
         item.setName(nameEditText.getText().toString());
         item.setText(textEditText.getText().toString());
+        item.setCategory(spinner.getSelectedItem().toString());
         item.setTimeStamp(System.currentTimeMillis() + 172800000); // plus 2 days
         serverComClass.saveItem(item);
         try {

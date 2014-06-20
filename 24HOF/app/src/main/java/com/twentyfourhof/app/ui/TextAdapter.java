@@ -25,6 +25,7 @@ public class TextAdapter extends ArrayAdapter<MediaItem> {
 
         TextView titleTv = (TextView) relLayout.findViewById(R.id.title);
         TextView textTv = (TextView) relLayout.findViewById(R.id.text);
+        TextView categoryTv = (TextView) relLayout.findViewById(R.id.categoryTextView);
 
         CheckBox currentItemFavorised = (CheckBox)relLayout.findViewById(R.id.favorizebutton);
         currentItemFavorised.setChecked(item.isFavorised());
@@ -58,6 +59,7 @@ public class TextAdapter extends ArrayAdapter<MediaItem> {
 
         titleTv.setText(item.getName());
         textTv.setText(item.getText());
+        categoryTv.setText(item.getCategory());
         return relLayout;
     }
 }

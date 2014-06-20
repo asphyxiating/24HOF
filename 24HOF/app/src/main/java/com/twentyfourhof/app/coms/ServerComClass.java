@@ -24,10 +24,11 @@ public class ServerComClass {
     public static final String PARSE_USER_CLASS = "user";
 
     public static final String PARSE_NAME = "name";
+    public static final String PARSE_TEXT = "text";
+    public static final String PARSE_CATEGORY = "category";
+    public static final String PARSE_ITEM_FAVORIZED = "favorised";
     public static final String PARSE_PICTURE_URL = "parsePictureURL";
     public static final String PARSE_USER = "user";
-    public static final String PARSE_ITEM_FAVORIZED = "favorised";
-    public static final String PARSE_TEXT = "text";
     public static final String PARSE_USER_NAME = "name";
     public static final String PARSE_USER_AGE = "age";
     private static final String PARSE_TIMESTAMP = "timestamp";
@@ -49,9 +50,10 @@ public class ServerComClass {
             for (ParseObject parseObject : parseObjects) {
                 MediaItem item = new MediaItem();
                 item.setName(parseObject.getString(PARSE_NAME));
-                item.setPictureURL(parseObject.getString(PARSE_PICTURE_URL));
                 item.setText(parseObject.getString(PARSE_TEXT));
+                item.setCategory(parseObject.getString(PARSE_CATEGORY));
                 item.setFavorised(parseObject.getBoolean(PARSE_ITEM_FAVORIZED));
+                item.setPictureURL(parseObject.getString(PARSE_PICTURE_URL));
                 // item.setTimeStamp(parseObject.getLong(PARSE_TIMESTAMP));
                 ParseObject parseUser = parseObject.getParseObject("parent");
                 // item.setUser(convertToUser(parseUser));
@@ -83,6 +85,7 @@ public class ServerComClass {
     public void saveItem(MediaItem item) {
         ParseObject parseObject = new ParseObject(PARSE_MEDIAITEM_CLASS);
         parseObject.put(PARSE_NAME, item.getName());
+        parseObject.put(PARSE_CATEGORY, item.getCategory());
         parseObject.put(PARSE_PICTURE_URL, item.getPictureURL());
       //  parseObject.put("parent", ParseObject.createWithoutData(PARSE_USER_CLASS, item.getUser().getId()));
         parseObject.put(PARSE_TEXT, item.getText());
