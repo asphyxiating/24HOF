@@ -26,6 +26,7 @@ public class ServerComClass {
     public static final String PARSE_NAME = "name";
     public static final String PARSE_PICTURE_URL = "parsePictureURL";
     public static final String PARSE_USER = "user";
+    public static final String PARSE_ITEM_FAVORIZED = "favorised";
     public static final String PARSE_TEXT = "text";
     public static final String PARSE_USER_NAME = "name";
     public static final String PARSE_USER_AGE = "age";
@@ -50,6 +51,7 @@ public class ServerComClass {
                 item.setName(parseObject.getString(PARSE_NAME));
                 item.setPictureURL(parseObject.getString(PARSE_PICTURE_URL));
                 item.setText(parseObject.getString(PARSE_TEXT));
+                item.setFavorised(parseObject.getBoolean(PARSE_ITEM_FAVORIZED));
                 // item.setTimeStamp(parseObject.getLong(PARSE_TIMESTAMP));
                 ParseObject parseUser = parseObject.getParseObject("parent");
                 // item.setUser(convertToUser(parseUser));
@@ -84,6 +86,7 @@ public class ServerComClass {
         parseObject.put(PARSE_PICTURE_URL, item.getPictureURL());
       //  parseObject.put("parent", ParseObject.createWithoutData(PARSE_USER_CLASS, item.getUser().getId()));
         parseObject.put(PARSE_TEXT, item.getText());
+        parseObject.put(PARSE_ITEM_FAVORIZED, item.isFavorised());
      //   parseObject.put(PARSE_TIMESTAMP, item.getTimeStamp());
         parseObject.saveInBackground();
     }

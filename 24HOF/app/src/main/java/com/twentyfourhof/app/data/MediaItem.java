@@ -6,8 +6,10 @@ public class MediaItem {
 
     private String name = "";
     private String text = "";
+    private boolean favorised;
     private User user = new User();
     private long timeStamp = 0;
+
 
     @JsonProperty("pic")
     private String pictureURL = "";
@@ -25,6 +27,10 @@ public class MediaItem {
     public void setText(String text) {
         this.text = text;
     }
+
+    public boolean isFavorised() {return favorised;}
+
+    public void setFavorised(boolean favorised) {this.favorised = favorised;}
 
     public User getUser() {
         return user;

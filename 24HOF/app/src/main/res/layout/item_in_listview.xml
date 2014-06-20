@@ -49,19 +49,21 @@
       
      <!-- Favorize Heart -->
 
-     <ImageView
-        android:id="@+id/picture"
-        android:layout_width="wrap_content"
-     	android:layout_height="wrap_content"
-     	android:src="@drawable/heart"
+     <CheckBox
+        android:id="@+id/favorizebutton"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
      	android:layout_alignParentRight="true"
-     	android:layout_centerVertical="true"/>
+     	android:layout_centerVertical="true"
+        android:focusable="false"
+        android:background="@drawable/item_in_listview_button"/>
 
     <TextView
             android:id="@+id/categoryTextView"
             android:layout_width="50dip"
             android:layout_height="wrap_content"
             android:textSize="10sp"
+            android:textColor="#7e3386"
             android:text="Poetry"
             android:gravity="center"
             android:layout_marginLeft="3dip"

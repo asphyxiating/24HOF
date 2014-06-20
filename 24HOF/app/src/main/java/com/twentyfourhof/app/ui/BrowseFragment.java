@@ -1,20 +1,15 @@
 package com.twentyfourhof.app.ui;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.google.inject.Inject;
 import com.twentyfourhof.app.R;
 import com.twentyfourhof.app.data.MediaItem;
 import com.twentyfourhof.app.ui.events.ItemEventResult;
 import roboguice.event.Observes;
 import roboguice.fragment.RoboListFragment;
-
-
 
 import java.util.ArrayList;
 
